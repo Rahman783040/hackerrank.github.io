@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic grid</title>
+    <style>
+        .container{
+           display: grid;
+           /* yahan box se screen ka size full ho jata h
+           or fr matlab fraction according to first box example here second column sayr 4fr means 4 time of first box which we given 1fr */
+           grid-template-columns: 1fr 2fr 1fr;
+           /* grid-template-columns: 400px 400px 400px; */
+           gap: 10px;
+        }
+        .box{
+            border: 3px solid black;
+            background-color: khaki;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is box-1</div>
+        <div class="box">this is box-2</div>
+        <div class="box">this is box-3</div>
+        <div class="box">this is box-4</div>
+        <div class="box">this is box-5</div>
+        <div class="box">this is box-6</div>
+        <div class="box">this is box-7</div>
+        <div class="box">this is box-8</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-10</div>
+    </div>
+</body>
+</html>

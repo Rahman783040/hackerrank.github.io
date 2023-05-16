@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        background-color:skyblue;
+        border: 4px solid black;
+        height: 500px;
+        align-items: center;
+    }
+    .card{
+        
+        margin: 10px 20px;
+        padding: 10px 10px ;
+        border: 2px solid red;
+        height: 150px;
+        /* box-shadow: offset x  offset y color; */
+        box-shadow: 10px 13px green;
+        /* box-shadow: x y blur color; */
+        box-shadow: 10px 20px 5px green;
+        /* box-shadow: x y blur shadow color; */
+        box-shadow: 10 px 20 px 5px 10px green;
+        /* note all above syntax with negative value give shadow from top */
+
+    }
+    .card h1{
+        text-shadow: 2px 3px white;
+        text-shadow: 2px 3px 2px white;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+    <div class="card" id="card1">
+        <h1>this is c++ </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, placeat at? Fugit cupiditate facilis delectus
+            repellendus, earum inventore eius voluptates.</p>
+    </div>
+    <div class="card" id="card2">
+        <h1>this is html class</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis adipisci rem quaerat non et, quae
+            soluta dolores ullam corporis.</p>
+    </div>
+    <div class="card" id="card3">
+        <h1>This is python box</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, possimus non! Officiis voluptate officia omnis debitis quod, quae ex aliquid!</p>
+    </div>
+</div>
+</body>
+
+</html>

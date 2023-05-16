@@ -1,0 +1,79 @@
+<!-- yaha hum ek box ko kese tayyar karte hain wo dekhenge -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            /* box-sizing: border-box; */
+        }
+        h1{margin:23px auto;
+            width: 450px;
+        }
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            background-color: rgb(250, 226, 205);
+            margin: 33px auto;
+        }
+        .item{
+            border: 3px solid grey;
+            margin: 12px 3px;
+            /* padding:12px 3px; */
+            background-color: rgb(248, 238, 238);
+        }
+
+        #fruit {
+            border: 2px solid black;
+            width: 50%;
+            height: 70;
+            float: right;
+        }
+
+        #computer {
+            border: 2px solid black;
+            width: 45%;
+            height: 100;
+            float: left;
+        }
+
+        #stationary {
+            width: 100%;
+            clear: both;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p id="fruitpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores pariatur
+                expedita similique beatae nostrum perspiciatis dolore nihil reprehenderit perferendis soluta, deserunt,
+                eius quisquam delectus doloribus sunt at cupiditate est recusandae placeat optio vel nisi minus, ducimus
+                debitis. Doloremque, deserunt voluptatibus?</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, vitae
+                iure libero facilis animi asperiores provident, quas repellat quaerat maxime tempora ducimus aut cum
+                sapiente? Molestiae, sapiente unde? Nulla, quos magnam eum officia aut maxime nostrum beatae dicta
+                ducimus ipsum?</p>
+        </div>
+        <div id="stationery" class="item">
+            <h3>Stationery</h3>
+            <p id="stationerypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, velit!
+                Aspernatur, ut explicabo. Veritatis excepturi accusamus fuga, beatae deleniti placeat temporibus
+                consectetur ut tenetur, iusto ipsum iure, recusandae expedita ex illo maxime eaque eius quae. Laudantium
+                pariatur tempore consectetur. Dignissimos!</p>
+        </div>
+    </div>
+</body>
+
+</html>

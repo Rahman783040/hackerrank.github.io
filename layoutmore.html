@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lout more</title>
+</head>
+<style>
+    @media only screen and (max-width: 300px){
+        body{
+            background-color:red;
+        }
+        .container{
+            grid-template-areas:
+        'nav nav nav nav'
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer';
+        }
+        aside{
+            display: none;
+        }
+        span{
+          display: block;
+            text-align: center;
+        }
+        
+    }
+    @media only screen and (min-width:300px) and (max-width:500px){
+        body{
+            background-color: green;
+        }
+        .container{
+            grid-template-areas:
+        'nav nav nav nav'
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer';
+        }
+        aside{
+            display: none;
+        }
+        span{
+          display: block;
+            text-align: center;
+        }
+       
+    }
+    @media (min-width:500px) and (max-width:800px){
+        body{
+            background-color: lightcoral;
+        }
+        .container{
+            grid-template-areas:
+        'nav nav nav nav'
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer';
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+    @media (min-width:800px){
+        body{
+            background-color: yellow;
+        }
+    }
+    .container{
+        display: grid;
+        grid-gap: 2px;
+        grid-template-areas:
+        'nav nav nav nav'
+        'section section section aside'
+        'footer footer footer footer';
+    }
+    nav{
+     grid-area: nav;
+    }
+    section{
+        grid-area: section;
+    }
+    aside{
+        grid-area: aside;
+    }
+    footer{
+        grid-area: footer;
+        text-align: center;
+    }
+    .bdr{
+        border: 3px solid red;
+        background-color: aquamarine;
+        border-radius: 5px;
+        padding: 10px;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>home</span>
+            <span>service</span>
+            <span>about</span>
+            <span>contact us</span>
+        </nav>
+        <section class="bdr">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias reprehenderit porro debitis, quia ipsa magni libero non minus nisi id repellendus iste est amet dignissimos, quasi praesentium. Quis, deleniti possimus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident ducimus repellendus rem aspernatur similique illum incidunt. Minus dolorem blanditiis natus obcaecati necessitatibus saepe odit ut nobis deserunt in laborum eius aut, quidem doloremque eos aliquam autem, dicta labore quaerat? Cupiditate, dolorem magnam. Atque culpa pariatur explicabo esse odio vitae totam commodi, laboriosam libero voluptates iusto, sapiente maxime tempore itaque eos eveniet cum, quisquam cupiditate tenetur! Soluta, omnis. Eligendi tempore facilis id deserunt modi sint culpa nisi odit laborum assumenda dolore aspernatur omnis perferendis saepe corporis necessitatibus, ut tenetur ipsa inventore enim. Excepturi praesentium, sequi saepe, libero velit molestiae voluptatum ducimus id necessitatibus soluta aperiam veniam beatae iste accusantium! Iusto perferendis autem minima a recusandae iste libero quis non expedita corrupti! Voluptatem nulla odit omnis eaque sit sunt aspernatur sapiente explicabo debitis rem, placeat in cumque dolorum assumenda suscipit commodi aliquid corrupti quae necessitatibus autem tempore optio labore architecto minima? Aliquid eum ad repellendus aut voluptas perspiciatis qui hic porro distinctio nesciunt doloribus ratione sunt repudiandae molestiae labore vitae, magni numquam iure totam neque quibusdam odio cupiditate enim sed! Soluta laborum placeat autem asperiores repudiandae. Laudantium excepturi quaerat cum laborum officia, a quia totam mollitia porro. Animi, id rem! Quasi.
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">copyright not allowed</footer>
+</body>
+</html>

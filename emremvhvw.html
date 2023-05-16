@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em rem vh and vw</title>
+</head>
+<style>
+    html{
+        font-size: 25px;
+        /* html me pure page ki font size set ho jati h or ye rem se change hoti h kisi particular ke liye  */
+    }
+    .container{
+        width: 400px;
+        height: 100vh;
+        border-radius: 2px solid red;
+        /* note em will set according to container font size bcz container cover all heading hence one greater size ke according set hota h  */
+        font-size: 10px;
+    }
+    h1{
+        text-align: center;
+    }
+    #first{
+        font-size: 3em;
+        padding: 3px;
+        /* em means change according to one bigger font size means 2 time n in padding it become padding size * font size of same *font size of container  */
+/* means font size = 3*10; */
+/* means padding size = 3*3*10=90 */
+    }
+    #second{
+        font-size: 3rem;
+        padding : 3rem;
+        /* means font size = 3*25 = 75according to html set hota h naa */
+        /* means padding = 3*3*25 */
+    }
+</style>
+<body>
+    <div class="container">
+        <h1 id="first">This is FIrst</h1>
+        <h1 id="second">This is second</h1>
+        <h1 id="third">This is Third</h1>
+    </div>
+</body>
+</html>

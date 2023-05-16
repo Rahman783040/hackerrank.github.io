@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth psedo child</title>
+</head>
+<style>
+    body{
+        background-color: lightcyan;
+        background: url(https://source.unsplash.com/collection/190727/1600x900);
+
+    }
+    
+    .container{
+        /* background-color:pink; */
+        display: block;
+        /* border: 2px red solid; */
+        text-align: center;
+        margin: 0px auto;
+        width: 50%;
+        
+    }
+    li{
+        list-style: none;
+    }
+    input[type='text']{
+        color: blue;
+        border: 6px solid black;
+    }
+    input[type='email']{
+        border: 6px solid black;
+    }
+    a[target='_self']{
+        color: brown;
+    }
+    li:nth-child(3){
+        font-size: 50px;
+        color: brown;
+    }
+    li:nth-child(even){
+        font-size: 50px;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to Facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+    <ul>
+        <li>hi</li>
+        <li>how</li>
+        <li>are</li>
+        <li>yi</li>
+        <li>mere</li>
+        <li>bhai</li>
+        <li>kya</li>
+        <li>ho</li>
+    </ul>
+</div>
+</body>
+</html>

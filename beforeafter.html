@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        header::before {
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            z-index:-550;
+            content:" ";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.4;
+            top: 0px;
+            
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 30px;
+            margin:20px auto ;
+            width: 33%;
+
+        }
+
+        li {
+            list-style: none;
+            margin: 0 20px;
+            cursor: pointer;
+        }
+        li:hover{
+            color: red;
+        }
+
+        section {
+            /* border: 2px red solid; */
+            height: 344px;
+            font-size: 50px ;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin: 230px 230px;
+            /* align-content: center; */
+        }
+
+        p {
+            text-align: centre;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+        h1:hover{
+            color: yellow;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1> Rahman Techno world</h1>
+        <p>hello dosto aapka swagat hai meri website me or ye website un logo ke liye hai jo new new technology me interest rakhte hain so aap sabhi ka swagat h isliye aapse request hai ki humari website per aane ke baad kucch naya gain kare or is ke bare me apne dosto ko bhi bataye </p>
+        <div>
+           ! Have a nice day😊
+        </div>
+    </section>
+</body>
+
+</html>

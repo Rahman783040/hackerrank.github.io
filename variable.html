@@ -1,0 +1,38 @@
+<!-- note var ka scope ek particular curly braces ke andar hi hota h  -->
+<!-- or varibal golobal type ka banane ke liye .root method me daalte hain -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+<style>
+    .root{
+        --box-color:white;
+    }
+   .container{
+       display: flex;
+    }
+    .card{
+    --box-color:red;
+    background-color: var(--box-color);
+    width: 300px;
+        height: 300px;
+        margin: 10px 20px; 
+        border: 4px solid black;
+        box-shadow: 10px 20px var(--primary-color);
+        --primary-color:green;
+
+
+    }
+</style>
+<body >
+    <div class="container">
+    <div class="card" id="card1"></div>
+    <div class="card" id="card2"></div>
+    <div class="card" id="card3"></div>
+</div>
+</body>
+</html>

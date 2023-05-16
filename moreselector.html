@@ -1,0 +1,52 @@
+<!-- div p karoge to paragraph kahin ka bhi ho div ke andar usme style lagega 
+or agar div + p karoge to paragraph just d ke uper ka lagega -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more selector</title>
+</head>
+<style>
+   .container{
+border:2px red solid;
+text-align: center;
+/* color: red; */
+/* background-color: black; */
+font-size: 25px;
+   } 
+/* div p{
+    display: block;
+    width: 33%;
+    height:30 px ;
+    border: 2px red solid;
+    background-color: green;
+    margin: 10px auto;
+} */
+
+li{
+    list-style: none;
+}
+div + p {
+    background-color: black;
+    color: blue;
+}
+</style>
+<body>
+    <header class="container">
+        <div>
+            <ul>
+                <li>
+
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </li>
+            </ul>
+            <p>this is the second paraph</p>
+        </div>
+        <div>
+            <p> i m Rahman</p>
+        </div>
+    </header>
+</body>
+</html>

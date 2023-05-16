@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<style>
+    .container{
+       /* grid-gap: 1rem; */
+        grid-template-areas:
+        'navbar navbar navbar navbar'
+        'section section secton asside'
+        'footer footer footer footer';
+    }
+    #navbar{
+        grid-area: navbar;
+    }
+    #section{
+        grid-area: section;
+    }
+    #asside{
+        grid-area: asside;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .box{
+        background-color: khaki;
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">Home Service About Contact</div>
+    <div id="section" class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus error sapiente illo a ex vel nemo, dolore dolorem sed vitae doloremque expedita totam repudiandae corrupti porro aliquid tempora, recusandae doloribus repellat dolorum nobis ratione? Illo sint aliquam eius iure dolores
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi dolorum beatae, odio vel dolorem non? Praesentium quisquam labor nulla, debitis pariatur, nisi, tenetur magnam? Tempora minus excepturi, ea odio consequatur aspernatur vitae eius expedita tenetur assumenda error. Expedita nisi architecto quidem neque aliquam, velit doloribus quia magnam nesciunt maiores labore saepe libero harum perferendis, ipsa molestiae odit! Perferendis deserunt quibusdam corporis provident quam delectus maxime inventore ullam, omnis fugit.
+    </div>
+    <dive id="asside" class="box">more about us
+        
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum magnam pariatur, recusandae reiciendis nisi ab in vero, error necessitatibus qui earum? Id delectus iste consequuntur animi autem veniam, doloremque sint sequi eligendi vitae nobis doloribus impedit perspiciatis quibusdam aliquid veritatis debitis incidunt laborum. Nesciunt exercitationem quam, distinctio rerum aperiam commodi voluptatibus qui autem ipsam odit explicabo cum libero voluptatum eius soluta voluptate
+    </div>
+    <footer class="box">do not copyright</footer>
+    </div>
+
+</body>
+
+</html>

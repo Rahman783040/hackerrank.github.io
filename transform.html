@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .container {
+            height: 750px;
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Box {
+            display: flex;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            color: white;
+            border-radius: 3px solid red;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+              transition: all ;
+              /* three property in a line first apply to all second time third time function */
+
+        }
+
+        .Box:hover{
+            
+            background-color: red;
+              transform: rotate(360deg);
+              /* transform: translate(123px,123px); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Box">
+            This is Rahman here
+        </div>
+
+    </div>
+</body>
+
+</html>

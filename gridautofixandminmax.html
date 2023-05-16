@@ -1,0 +1,44 @@
+<!-- autofunction ka istemal hum responsive website banane ke liye karte hain -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autofix min max</title>
+
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        /* grid-template-columns: repeat(3, 112px); */
+       justify-content: center;
+       grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+       /* matlab 300px ka minimum rakh do or maximum agar page ka size bade browser ka to maximum 1 fr rakh do matlab agar ek line me 6 column aa rhe h 300 px per agar page  chhota hoga to box kam ayenge hence ye syntax unke next row me wrap kara dega but size 300 se kam nahin hoga */
+    }
+
+    .box {
+        padding: 10px 10px;
+        border: 2px solid black;
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">this is box = 1</div>
+        <div class="box">this is box = 2</div>
+        <div class="box">this is box = 3</div>
+        <div class="box">this is box = 4</div>
+        <div class="box">this is box = 5</div>
+        <div class="box">this is box = 6</div>
+        <div class="box">this is box = 7</div>
+        <div class="box">this is box = 8</div>
+        <div class="box">this is box = 9</div>
+        <div class="box">this is box = 10</div>
+    </div>
+</body>
+
+</html>

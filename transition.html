@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+</head>
+<style>
+    body{
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 400px;
+        height: 400px;
+        color: white;
+        background-color: black;
+        display: flex;
+       
+        /* this will only effect on the background color but if we use all in transition  */
+        /* then all the property will be transtion */
+        /* transition: background-color; */
+        transition:all;
+        transition-duration: 2s;
+    }
+    .container:hover{
+        background-color: red;
+        font-size: 50px;
+        height: 750px;
+        width: 750px;
+        border-radius: 750px;
+        }
+       
+</style>
+<body>
+    <h1>this is transition </h1>
+    <div class="container">
+        this is Rahman
+    </div>
+    <div class="container"id="cont">
+        this is noman
+    </div>
+</body>
+</html>

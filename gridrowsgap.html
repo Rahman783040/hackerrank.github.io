@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rows in grid</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        row-gap: 10px;
+        /* row me size badhta jata h or auto me sab uske barabar */
+        /* grid-template-rows: 100px 200px 300px ; */
+        grid-template-rows: 1fr 1fr 4fr;
+        grid-auto-rows: 2fr;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 10px;
+
+    }
+    .box{
+        border: 3px solid black;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">this is item one</div>
+        <div class="box">this is item one</div>
+        <div class="box">this is item one</div>
+        <div class="box">this is item one</div>
+        <div class="box">this is item one</div>
+        <div class="box">this is item one</div>
+        <div class="box">this is item one</div>
+        <div class="box">this is item one</div>
+        <div class="box">this is item one</div>
+        <div class="box">this is item one</div>
+        <div class="box">this is item one</div>
+        <div class="box">this is item one</div>
+    </div>
+</body>
+</html>
